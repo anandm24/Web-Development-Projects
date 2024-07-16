@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Indian Income Tax Calculator</title>
+    <meta name="keywords" content="Tax calculator, salary calculator, income tax calculation, in hand salary calculation">
+    <meta name="description" content="Indian Income Tax Calculator. We let you see how much taxes you will pay from your salary which gives you clarity.">
+    <link rel="stylesheet" href="styles/style.css" />
+    <meta name="google-site-verification" content="9CHsxLDkVMPqjwQfKGqRZInQdLaNvS4kna36cKdSJrA" />
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-9864538697063053",
+      enable_page_level_ads: true
+      });
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrapper">
+        <h1>Indian Income Tax Calculator</h1>
+        <p>gives you clarity</p>
+      </div>
+    </header>
+    <div class="container">
+      <main>
+        <div class="wrapper">
+            <label class="main__label"
+              >Yearly Gross Income
+              <input
+                id="yearly-salary"
+                class="main__input"
+                type="number"
+                name="grossIncome"
+                placeholder="₹"
+                required
+              />
+            </label>
+        </div>
+        <div class="results">
+          <div class="wrapper">
+            <h1 class="results__title">Amounts</h1>
+            <div class="results_entries">
+              <div class="result__entry">
+                <label class="result__entry__label">Taxable Income</label>
+                <span id="taxable-income" class="result__entry__value">--</span>
+              </div>
+              <div class="result__entry">
+                <label class="result__entry__label">Income Tax</label>
+                <span id="income-tax" class="result__entry__value tax">--</span>
+              </div>
+              <div class="result__entry">
+                <label class="result__entry__label">Profession Tax</label>
+                <span id="profession-tax" class="result__entry__value tax"
+                  >--</span
+                >
+              </div>
+              <div class="result__entry">
+                <label class="result__entry__label"
+                  >Education & Health Cess</label
+                >
+                <span id="cess-tax" class="result__entry__value tax">--</span>
+              </div>
+              <div class="result__entry">
+                <label class="result__entry__label">Total Deductions</label>
+                <span id="total-deductions" class="result__entry__value tax"
+                  >--</span
+                >
+              </div>
+              <div class="result__entry">
+                <label class="result__entry__label">Yearly Net Income</label>
+                <span id="yearly-net-income" class="result__entry__value"
+                  >--</span
+                >
+              </div>
+              <div class="result__entry">
+                <label class="result__entry__label">Monthly Income</label>
+                <span id="monthly-salary" class="result__entry__value">--</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="secondary">
+        <h2>More options</h2>
+        <label class="secondary__entry">Age<br/>
+          <input type="radio" id="adult" name="age" value="adult" checked>Below 60 years</input><br>
+          <input type="radio" id="senior" name="age" value="senior">60 years or more and below 80 years</input><br>
+          <input type="radio" id="ultraSenior" name="age" value="ultraSenior">80 years and above</input><br><br>
+        </label>
+        <label class="secondary__entry">Tax free investments<br/>
+          <input type="number" id="investments" name="investments" class="" placeholder="Maximum of ₹ 150000"/>
+        </label>
+      </div>
+    </div>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>

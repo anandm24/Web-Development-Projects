@@ -1,0 +1,131 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(250, 250, 250);
+  font-family: "Calibri";
+}
+
+.site-header {
+  background-color: rgb(63, 81, 181);
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  position: fixed;
+  top: 0;
+}
+
+.wrapper {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  max-width: 1200px;
+}
+
+.site-header h1 {
+  display: inline;
+  color: #fff;
+}
+
+p {
+  display: inline;
+  color: #cecece;
+  padding-left: 1rem;
+}
+
+main {
+  margin-top: 7rem;
+}
+
+.main__label {
+  color: #666666;
+  font-size: 2rem;
+}
+
+input[type="number"] {
+  border: 0;
+  border-bottom: 1px solid #666666;
+  outline: 0;
+  color: #666666;
+  background-color: rgb(250, 250, 250);
+}
+
+.main__input {
+  font-size: 2rem;
+  margin-left: 1rem;
+  max-width: 200px;
+}
+
+.results {
+  max-width: 600px;
+}
+
+.results__title {
+  color: #666666;
+}
+
+.result__entry {
+  padding: 1rem 0;
+  border-bottom: 1px solid #cecece;
+}
+
+.result__entry__label {
+  font-size: 1.2rem;
+}
+
+.result__entry__value {
+  font-size: 1.2rem;
+  float: right;
+}
+
+#monthly-salary {
+  color: #228b22;
+}
+
+.tax {
+  color: #ff6347;
+}
+
+.secondary {
+  margin-top: 10rem;
+  color: #666666;
+}
+
+.secondary__entry {
+  font-size: 1.2rem;
+}
+
+.secondary__entry input {
+  font-size: 1.2rem;
+  outline: 0;
+}
+
+@media screen and (min-width: 971px) {
+  .container {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .secondary {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+  }
+  p {
+    display: block;
+    padding-left: 0;
+    margin: 0;
+  }
+  .wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .site-header h1 {
+    font-size: 1.5rem;
+  }
+}
